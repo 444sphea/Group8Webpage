@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Clover | Group 8</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="Group8.css">
+</head>
+
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="G8logo.png.png" alt="logo">
+      <h2>Lucky Clover</h2>
+    </div>
+
+    <ul class="sidebar-links">
+      <li>
+        <a href="#" onclick="loadSection('Research')">
+          <span class="material-symbols-outlined">home</span>Research - Basic Info
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadSection('Stream')">
+          <span class="material-symbols-outlined">home</span>Stream Layout
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadSection('Members')">
+          <span class="material-symbols-outlined">home</span>Members
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadSection('Goals')">
+          <span class="material-symbols-outlined">home</span>Goals
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadSection('Logo')">
+          <span class="material-symbols-outlined">home</span>Logo & Groupname
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="loadSection('Platform')">
+          <span class="material-symbols-outlined">home</span>Platform
+        </a>
+      </li>
+    </ul>
+
+    <div class="user-account">
+      <h3>Chevy Ostheldane Mabini</h3>
+      <span>Webpage Developer</span>
+    </div>
+  </aside>
+
+ <div class="content" id="content-box">
+    <h2>Welcome</h2>
+    <p>Select something from the sidebar to see the details.</p>
+  </div>
+
+
+  
+  <script>
+    function loadSection(section) {
+      const box = document.getElementById('content-box');
+
+      if (section === 'Goals') {
+        box.innerHTML = `
+          <h2>Goals</h2>
+          <p>Boost Streaming Content views by 50% Able to Increase our social media engagement and also our poster, teaser, webpage.</p>
+          <p>Increase our social media engagement and our poster, teaser and webpage.</p>
+
+          <h3>Target Audience</h3>
+          <p>Age 14 to 18 who like podcast and mukbang streams.</p>
+
+          <h3>Promotion</h3>
+          <p>We will be promoting our upcoming stream by posters and teasers, as well as where it will happen and what social media platform we will be applying to our stream.</p>
+        `;
+      }
+
+      if (section === 'Members') {
+        box.innerHTML = `
+          <h2>Members</h2>
+          <p>• Alexis Caparas</p>
+          <p>• Chevy Ostheldane Mabini</p>
+          <p>• Akio Gabriel Yap</p>
+          <p>• Stephanie Louise Tria</p>
+          <p>• Hannah Dwyne Baldelovar</p>
+        `;
+      }
+
+      if (section === 'Research') {
+        box.innerHTML = `
+          <h2>Research - Basic Info</h2>
+          <p>p>
+        `;
+      }
+
+      if (section === 'Stream') {
+        box.innerHTML = `
+          <h2>Stream Layout</h2>
+          <p></p>
+        `;
+      }
+
+      if (section === 'Logo') {
+        box.innerHTML = `
+          <h2></h2>
+          <p></p>
+        `;
+      }
+
+      if (section === 'Platform') {
+        box.innerHTML = `
+          <h2>Platform</h2>
+          <p></p>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>
